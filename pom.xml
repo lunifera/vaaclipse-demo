@@ -180,10 +180,10 @@
 				<module>org.semanticsoft.vaaclipsedemo.cassandra.app</module>
 				<module>org.semanticsoft.vaaclipsedemo.cassandra.vaadinaddons</module>
 				<module>org.semanticsoft.vaaclipsedemo.cassandra.widgetset</module>
-				<module>org.semanticsoft.vaaclipsedemo.cassandra.product</module>
-<!-- 				<module>org.semanticsoft.vaaclipsedemo.mediaplayer</module> -->
-<!-- 				<module>org.semanticsoft.vaaclipsedemo.mediaplayer.product</module> -->
-<!-- 				<module>org.semanticsoft.vaaclipsedemo.mini</module> -->
+				<!-- <module>org.semanticsoft.vaaclipsedemo.cassandra.product</module> -->
+				<!-- <module>org.semanticsoft.vaaclipsedemo.mediaplayer</module> -->
+				<!-- <module>org.semanticsoft.vaaclipsedemo.mediaplayer.product</module> -->
+				<!-- <module>org.semanticsoft.vaaclipsedemo.mini</module> -->
 
 				<module>org.semanticsoft.vaaclipsedemo.cassandra.pref.api</module>
 				<module>org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle1</module>
