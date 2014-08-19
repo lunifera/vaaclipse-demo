@@ -23,7 +23,7 @@
 								<taskdef resource="net/sf/antcontrib/antlib.xml" />
 								<taskdef name="xmltask" classname="com.oopsconsultancy.xmltask.ant.XmlTask" />
 								<if>
-									<isset property="vaaclipse.p2.target.folder" />
+									<isset property="vaaclipsedemo.p2.target.folder" />
 									<then>
 										<echo>------------------------------------------------</echo>
 										<echo>Copying repository to ${vaaclipsedemo.p2.target.folder}</echo>
