@@ -39,13 +39,6 @@
          unpack="false"/>
 
    <plugin
-         id="org.semanticsoft.vaaclipsedemo.mediaplayer"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.semanticsoft.vaaclipsedemo.cassandra.pref.api"
          download-size="0"
          install-size="0"
@@ -68,13 +61,6 @@
 
    <plugin
          id="org.semanticsoft.vaaclipsedemo.contributions"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.semanticsoft.vaaclipsedemo.mini"
          download-size="0"
          install-size="0"
          version="0.0.0"
