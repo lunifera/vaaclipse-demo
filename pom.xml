@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.semanticsoft</groupId>
 	<artifactId>org.semanticsoft.vaaclipsedemo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>2.7.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Vaaclipse Demo :: Parent POM</name>
 
@@ -71,65 +71,6 @@
 	</pluginRepositories>
 
 	<profiles>
-		<profile>
-			<id>p2-kepler</id>
-			<activation>
-				<activeByDefault>false</activeByDefault>
-			</activation>
-			<build>
-				<defaultGoal>verify</defaultGoal>
-				<plugins>
-					<plugin>
-						<groupId>org.eclipse.tycho</groupId>
-						<artifactId>target-platform-configuration</artifactId>
-						<version>${tycho-version}</version>
-						<configuration>
-							<!-- <resolver>p2</resolver> -->
-							<!-- <pomDependencies>consider</pomDependencies> -->
-							<ignoreTychoRepositories>true</ignoreTychoRepositories>
-							<target>
-								<artifact>
-									<groupId>org.semanticsoft</groupId>
-									<artifactId>org.semanticsoft.vaaclipsedemo.target.kepler</artifactId>
-									<version>1.0.0-SNAPSHOT</version>
-								</artifact>
-							</target>
-							<environments>
-								<environment>
-									<os>win32</os>
-									<ws>win32</ws>
-									<arch>x86</arch>
-								</environment>
-							</environments>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-			<modules>
-				<module>org.semanticsoft.vaaclipsedemo.target.kepler</module>
-
-				<!-- exclusive for P2 -->
-				<module>org.semanticsoft.vaaclipsedemo.p2</module>
-
-				<!-- P2 features -->
-				<module>org.semanticsoft.vaaclipsedemo.feature</module>
-
-				<!-- Demo features -->
-				<module>org.semanticsoft.vaaclipsedemo.contributions</module>
-				<module>org.semanticsoft.vaaclipse.demo.contacts</module>
-				<module>org.semanticsoft.vaaclipsedemo.cassandra.app</module>
-				<module>org.semanticsoft.vaaclipsedemo.cassandra.vaadinaddons</module>
-				<module>org.semanticsoft.vaaclipsedemo.cassandra.widgetset</module>
-				<module>org.semanticsoft.vaaclipsedemo.cassandra.product</module>
-				<module>org.semanticsoft.vaaclipsedemo.mediaplayer</module>
-				<module>org.semanticsoft.vaaclipsedemo.mediaplayer.product</module>
-				<module>org.semanticsoft.vaaclipsedemo.mini</module>
-
-				<module>org.semanticsoft.vaaclipsedemo.cassandra.pref.api</module>
-				<module>org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle1</module>
-				<module>org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle2</module>
-			</modules>
-		</profile>
 
 		<profile>
 			<id>p2-luna</id>
@@ -151,7 +92,7 @@
 								<artifact>
 									<groupId>org.semanticsoft</groupId>
 									<artifactId>org.semanticsoft.vaaclipsedemo.target.luna</artifactId>
-									<version>1.0.0-SNAPSHOT</version>
+									<version>2.7.3-SNAPSHOT</version>
 								</artifact>
 							</target>
 							<environments>
@@ -176,7 +117,7 @@
 
 				<!-- Demo features -->
 				<module>org.semanticsoft.vaaclipsedemo.contributions</module>
-				<module>org.semanticsoft.vaaclipse.demo.contacts</module>
+				<module>org.semanticsoft.vaaclipsedemo.contacts</module>
 				<module>org.semanticsoft.vaaclipsedemo.cassandra.app</module>
 				<module>org.semanticsoft.vaaclipsedemo.cassandra.vaadinaddons</module>
 				<module>org.semanticsoft.vaaclipsedemo.cassandra.widgetset</module>
@@ -184,55 +125,6 @@
 				<!-- <module>org.semanticsoft.vaaclipsedemo.mediaplayer</module> -->
 				<!-- <module>org.semanticsoft.vaaclipsedemo.mediaplayer.product</module> -->
 				<!-- <module>org.semanticsoft.vaaclipsedemo.mini</module> -->
-
-				<module>org.semanticsoft.vaaclipsedemo.cassandra.pref.api</module>
-				<module>org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle1</module>
-				<module>org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle2</module>
-			</modules>
-		</profile>
-
-		<profile>
-			<id>build-cassandra-widgetsets</id>
-			<activation>
-				<activeByDefault>false</activeByDefault>
-			</activation>
-			<build>
-				<defaultGoal>verify</defaultGoal>
-				<plugins>
-					<plugin>
-						<groupId>org.eclipse.tycho</groupId>
-						<artifactId>target-platform-configuration</artifactId>
-						<version>${tycho-version}</version>
-						<configuration>
-							<!-- <resolver>p2</resolver> -->
-							<!-- <pomDependencies>consider</pomDependencies> -->
-							<ignoreTychoRepositories>true</ignoreTychoRepositories>
-							<target>
-								<artifact>
-									<groupId>org.semanticsoft</groupId>
-									<artifactId>org.semanticsoft.vaaclipse.target.kepler</artifactId>
-									<version>1.0.0-SNAPSHOT</version>
-								</artifact>
-							</target>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-			<modules>
-				<module>org.semanticsoft.vaaclipsedemo.target.kepler</module>
-
-				<!-- exclusive for P2 -->
-				<module>org.semanticsoft.vaaclipsedemo.p2</module>
-
-				<!-- P2 features -->
-				<module>org.semanticsoft.vaaclipsedemo.feature</module>
-
-				<!-- Demo features -->
-
-				<module>org.semanticsoft.vaaclipsedemo.cassandra.app</module>
-				<module>org.semanticsoft.vaaclipsedemo.cassandra.vaadinaddons</module>
-				<module>org.semanticsoft.vaaclipsedemo.cassandra.widgetset</module>
-				<module>org.semanticsoft.vaaclipsedemo.cassandra.product</module>
 
 				<module>org.semanticsoft.vaaclipsedemo.cassandra.pref.api</module>
 				<module>org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle1</module>
@@ -287,6 +179,51 @@
 				<!-- <module>org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle1</module> -->
 				<!-- <module>org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle2</module> -->
 			</modules>
+		</profile>
+
+		<profile>
+			<id>prepare-for-next-release</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<defaultGoal>org.eclipse.tycho:tycho-versions-plugin:set-version</defaultGoal>
+				<plugins>
+					<plugin>
+						<groupId>org.eclipse.tycho</groupId>
+						<artifactId>tycho-versions-plugin</artifactId>
+						<version>${tycho-version}</version>
+						<executions>
+							<execution>
+								<id>change-next-release</id>
+								<goals>
+									<goal>set-version</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<newVersion>${next-release}</newVersion>
+							<!-- All parents -->
+							<artifacts>org.semanticsoft.vaaclipsedemo,
+								org.semanticsoft.vaaclipsedemo.cassandra.app,
+								org.semanticsoft.vaaclipsedemo.cassandra.pref.api,
+								org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle1,
+								org.semanticsoft.vaaclipsedemo.cassandra.pref.bundle2,
+								org.semanticsoft.vaaclipsedemo.cassandra.product,
+								org.semanticsoft.vaaclipsedemo.cassandra.vaadinaddons,
+								org.semanticsoft.vaaclipsedemo.cassandra.widgetsets,
+								org.semanticsoft.vaaclipsedemo.contacts,
+								org.semanticsoft.vaaclipsedemo.contributions,
+								org.semanticsoft.vaaclipsedemo.feature,
+								org.semanticsoft.vaaclipsedemo.mediaplayer,
+								org.semanticsoft.vaaclipsedemo.mediaplayer.product,
+								org.semanticsoft.vaaclipsedemo.mini,
+								org.semanticsoft.vaaclipsedemo.p2
+							</artifacts>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
 		</profile>
 	</profiles>
 

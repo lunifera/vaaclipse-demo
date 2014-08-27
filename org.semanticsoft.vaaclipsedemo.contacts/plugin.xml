@@ -5,7 +5,7 @@
          id="product"
          point="org.eclipse.core.runtime.products">
       <product
-            name="org.semanticsoft.vaaclipse.demo.contacts"
+            name="org.semanticsoft.vaaclipsedemo.contacts"
             application="org.semanticsoft.vaaclipse.app.application">
          <property
                name="clearPersistedState"
@@ -13,7 +13,7 @@
          </property>
           <property
                name="applicationXMI"
-               value="org.semanticsoft.vaaclipse.demo.contacts/Application.e4xmi">
+               value="org.semanticsoft.vaaclipsedemo.contacts/Application.e4xmi">
          </property>
           <property
                name="preferenceCustomization"
@@ -25,11 +25,11 @@
          </property>
          <property
                name="appName"
-               value="org.semanticsoft.vaaclipse.demo.contacts">
+               value="org.semanticsoft.vaaclipsedemo.contacts">
          </property>
           <property
            name="lifeCycleURI"
-           value="bundleclass://org.semanticsoft.vaaclipse.demo.contacts/org.semanticsoft.vaaclipse.demo.lifecycle.LifecycleHandler">
+           value="bundleclass://org.semanticsoft.vaaclipsedemo.contacts/org.semanticsoft.vaaclipsedemo.lifecycle.LifecycleHandler">
          </property>
       </product>
    </extension>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="org.semanticsoft.vaaclipse.demo.contacts" id="org.semanticsoft.vaaclipse.demo.contacts.product" application="org.semanticsoft.vaaclipse.app.application" version="1.0.0.qualifier" useFeatures="false" includeLaunchers="true">
+<product name="org.semanticsoft.vaaclipsedemo.contacts" id="org.semanticsoft.vaaclipsedemo.contacts.product" application="org.semanticsoft.vaaclipse.app.application" version="1.0.0.qualifier" useFeatures="false" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>
@@ -114,7 +114,7 @@
       <plugin id="org.semanticsoft.vaaclipse.app"/>
       <plugin id="org.semanticsoft.vaaclipse.behaviour"/>
       <plugin id="org.semanticsoft.vaaclipse.contributions"/>
-      <plugin id="org.semanticsoft.vaaclipse.demo.contacts"/>
+      <plugin id="org.semanticsoft.vaaclipsedemo.contacts"/>
       <plugin id="org.semanticsoft.vaaclipse.presentation"/>
       <plugin id="org.semanticsoft.vaaclipse.publicapi"/>
       <plugin id="org.semanticsoft.vaaclipse.resources" fragment="true"/>
